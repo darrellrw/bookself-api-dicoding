@@ -1,0 +1,21 @@
+{
+  "name": "bookself-api-dicoding",
+  "version": "1.0.0",
+  "description": "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google CLoud bersama dengan Dicoding. Projek ini dibuat oleh Darrell RW",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./"
+  },
+  "author": "Darrell RW",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "nanoid": "^3.3.4"
+  }
+}
