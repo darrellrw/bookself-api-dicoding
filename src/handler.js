@@ -24,7 +24,7 @@ const addBookHandler = (request, h) => {
     return response;
   }
 
-  if (pageCount < readPage) {
+  if (readPage > pageCount) {
     const response = h.response({
       status: 'fail',
       message:
@@ -62,7 +62,7 @@ const addBookHandler = (request, h) => {
       status: 'success',
       message: 'Buku berhasil ditambahkan',
       data: {
-        bukuId: id,
+        bookId: id,
       },
     });
     response.code(201);
